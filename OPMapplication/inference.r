@@ -47,7 +47,7 @@ filterFFBS = function(x0,ODEdt,param,a,C,F,data,afun,bfun,Ffun,S,inter)
 {
  d = length(a)
  dx = length(x0)
- p - length(param)
+ p = length(param)
  ODEend = inter/ODEdt +1
  n = length(data) #no. obs
  mt = rep(0,d); Vt=matrix(0, ncol=d, nrow=d); Gt=matrix(0, ncol=d, nrow=d)
